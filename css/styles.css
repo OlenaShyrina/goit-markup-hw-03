@@ -1,3 +1,13 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
 :root {
    --primary-text-color:#212121;
    --main-background-color:#FFFFFF;
@@ -5,7 +15,7 @@
 }
 
 body {
-
+   margin: 0;
    font-family: Roboto, sans-serif;
 
    font-size: 14px;
