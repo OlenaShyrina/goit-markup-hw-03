@@ -24,6 +24,14 @@ body {
 
 }
 
+/* Ulilities */
+
+.list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
 /* Header */
 
  /* Container Header */
@@ -66,17 +74,11 @@ body {
    color:#FFFFFF;
 }
 
-.list {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-
 /* Site nav */
 
 .site-nav {
    display: flex;
-
+   margin-left: 93px;
 }
 
 .site-nav .item + .item {
@@ -103,7 +105,6 @@ body {
 
    text-decoration: none;
    color: currentColor;
-   background-color: tomato;
 
 }
 
@@ -121,6 +122,7 @@ body {
 
 .contacts.list {
    display: flex;
+   margin-left: auto;
 }
 
 .contacts.list .item + .item {
@@ -132,13 +134,13 @@ body {
    padding-top: 32px;
    padding-bottom: 32px;
 
+
    font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: #757575;
    text-decoration: none;
 
-   background-color: greenyellow;
 }
 
  .contacts .contact:hover,
@@ -190,6 +192,7 @@ body {
 /* Section features */
 
 .section {
+   display: flex;
    padding-top: 94px;
    padding-bottom: 94px;
   
@@ -212,6 +215,12 @@ body {
 .section-title.centered {
 
    text-align: center;
+}
+
+/* Section features */
+
+.features.list {
+   display: flex;
 }
 
 .feature-title {
