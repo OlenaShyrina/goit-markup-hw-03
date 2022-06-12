@@ -32,6 +32,14 @@ body {
    list-style: none;
 }
 
+h1,
+h2,
+h3,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
 /* Header */
 
  /* Container Header */
@@ -153,7 +161,7 @@ body {
 /* Hero */
 
 .hero-title {
-   margin-top: 0;
+
    margin-bottom: 30px;
    font-weight: 900;
    font-size: 44px;
@@ -189,7 +197,7 @@ body {
    
 }
 
-/* Section features */
+/* Section Utilites */
 
 .section {
    display: flex;
@@ -198,13 +206,7 @@ body {
   
 }
 
-.section.no-padding {
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
 .section-title {
-   margin-top: 0;
    margin-bottom: 50px;
    font-size: 36px;
    line-height: 1.17;
@@ -219,12 +221,24 @@ body {
 
 /* Section features */
 
+.features.section {
+   padding-bottom: 0;
+}
+
 .features.list {
    display: flex;
+ }
+
+.feature.list .item {
+   width: 270px;
+}
+
+.features.list .item + .item {
+   margin-left: 30px;
 }
 
 .feature-title {
-   margin-top: 0;
+
    margin-bottom: 10px;
    font-size: 14px;
    line-height: 1.14;
@@ -234,23 +248,47 @@ body {
 }
 
 .feature-description {
-   margin-top: 0;
-   margin-bottom: 0;
    line-height: 1.71;
 
+}
+
+/* Section What we do */
+
+.wedo.list{
+   display: flex;
+}
+
+.wedo.list .item +.item {
+margin-left: 30px;
 }
 
 /* Section Our team */
 
 .section.team {
- background-color: #F5F4FA;
+   background-color: #F5F4FA;
+}
+
+.team.list {
+   display: flex;
+}
+
+.team.list .item + .item {
+   margin-left: 30px;
 }
 
 .team.list .card {
+   padding-bottom: 30px;
+   text-align: center;
    background-color: #ffffff;
 }
+
+.card .foto {
+   margin-bottom: 30px;
+}
+
 .teammate-name {
-   
+   margin-bottom: 10px;
+
    font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
@@ -258,7 +296,6 @@ body {
 }
 
 .position {
- 
    font-size: 16px;
    line-height: 1.19;
 }
@@ -306,9 +343,15 @@ body {
 /* Footer */
 
 .footer {
+   padding-top: 60px;
    line-height: 1.71;
    background: #2F303A;
   
+}
+
+.logo.secondary {
+  margin-bottom: 10px;
+   
 }
 
 .address {
