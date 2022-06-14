@@ -40,22 +40,20 @@ p {
    margin-bottom: 0;
 }
 
+.container {
+   width: 1200px;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin: 0 auto;
+
+}
+
 /* Header */
 
 .page-header {
    border-bottom: 1px solid #ECECEC;
    
 }
-
- /* Container Header */
-
- .container {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
-
- }
 
 /* Main nav */
 
@@ -88,9 +86,13 @@ p {
 
 /* Site nav */
 
+nav {
+   margin-left: 93px;
+}
+
 .site-nav {
    display: flex;
-   margin-left: 93px;
+
 }
 
 .site-nav .item + .item {
@@ -164,8 +166,16 @@ p {
 
 /* Hero */
 
-.hero-title {
+.hero {
+   padding: 200px 0;
+   text-align: center;
+   background-color: #2F303A;
 
+}
+
+.hero-title {
+   width: 696px;
+   margin: 0 auto;
    margin-bottom: 30px;
    font-weight: 900;
    font-size: 44px;
@@ -192,19 +202,19 @@ p {
    color: #FFFFFF;
    background-color: var(--accent-color);
    border-color: transparent;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
    
 }
 
-.hero {
-   text-align: center;
-   background-color: #2F303A; 
-   
+.button:hover {
+   background-color: #188CE8;
 }
 
 /* Section Utilites */
 
 .section {
-   display: flex;
+
    padding-top: 94px;
    padding-bottom: 94px;
   
@@ -282,13 +292,14 @@ margin-left: 30px;
 }
 
 .team.list .card {
+   padding-top: 30px;
    padding-bottom: 30px;
    text-align: center;
    background-color: #ffffff;
 }
 
-.card .foto {
-   margin-bottom: 30px;
+.foto {
+   display: block;
 }
 
 .teammate-name {
@@ -324,6 +335,8 @@ margin-left: 30px;
   line-height: 1.62;
   color: var(--primary-text-color);
   background-color: #F5F4FA;
+  border: none;
+  border-radius: 4px;
 }
 
 .filters.list .item + .item {
@@ -332,13 +345,16 @@ margin-left: 30px;
 
 .filters .filter:hover,
 .filters .filter:focus {
-   color: #FFFFFF;
+
    background-color: var(--accent-color);
+   color: #FFFFFF;
 }
 
-.filters .active:active {
+.filters .active-btn {
    background-color: var(--accent-color);
+   color: #ffffff;
 }
+
 
 .button,
 .filter {
@@ -369,13 +385,18 @@ margin-left: 30px;
    margin-bottom: 0;
 }
 
-.work-card .card-image {
-   margin-bottom: 20px;
+.work-card {
+   padding: 20px 24px;
+   border: 1px solid #EEEEEE;
+   border-top: none;
+}
+
+.card-image {
+   display: block;
 }
 
 .work-title {
    margin-bottom: 4px;
-   margin-left: 24px;
 
    font-size: 18px;
    line-height: 2;
@@ -384,7 +405,7 @@ margin-left: 30px;
 }
 
 .type {
-   margin-left: 24px;
+
    font-size: 16px;
    line-height: 1.88;
 }
